@@ -1,6 +1,6 @@
 <h1 align="center"> FelipedelosH </h1>
 <br>
-<h4>WEB Scrapping Example - 1000 ways to lie.</h4>
+<h4>WEB Scrapping Example - 1000 ways to die.</h4>
 
 ![Banner](Docs/banner.png)
 

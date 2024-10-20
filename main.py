@@ -1,5 +1,5 @@
 """
-This Script its create to extract 1000 ways to lie
+This Script its create to extract 1000 ways to die
 """
 import requests
 from bs4 import BeautifulSoup
@@ -54,7 +54,7 @@ def orderDATA(arrData):
                 arrData[j+1] = temp
 
 
-data1000WayToLie = []
+data1000WayToDie = []
 temp = ""
 
 print("================STEP 02 of 03 - EXTACT DATA======================")
@@ -69,17 +69,17 @@ for table in tables:
             _death = cols[8].text
             _death = cleanData(_death)
             temp = temp + f"{_idDeath}|{_death}\n"
-            data1000WayToLie.append((_idDeath, _death))
+            data1000WayToDie.append((_idDeath, _death))
 
 print("================STEP 03 of 03 - SAVE DATA======================")
 with open("originalDATA.csv", "w", encoding="UTF-8") as f:
     f.write(temp)
 
 
-_dataOrder100waysToLie = "ID|DEATH\n"
-orderDATA(data1000WayToLie)
-for i in data1000WayToLie:
-    _dataOrder100waysToLie = _dataOrder100waysToLie + f"{i[0]}|{i[1]}\n"
+_dataOrder100waysToDie = "ID|DEATH\n"
+orderDATA(data1000WayToDie)
+for i in data1000WayToDie:
+    _dataOrder100waysToDie = _dataOrder100waysToDie + f"{i[0]}|{i[1]}\n"
 
-with open("1000WaysToLie.csv", "w", encoding="UTF-8") as f:
-    f.write(_dataOrder100waysToLie)
+with open("1000WaysToDie.csv", "w", encoding="UTF-8") as f:
+    f.write(_dataOrder100waysToDie)

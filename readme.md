@@ -2,7 +2,7 @@
 <br>
 <h4>WEB Scrapping Example - 1000 ways to lie.</h4>
 
-![Banner](docs/banner.png)
+![Banner](Docs/banner.png)
 
 This project utilizes Python's BeautifulSoup library to scrape data from the Wikipedia page "List of 1000 Ways to Die Episodes." It extracts and cleans specific information about each episode, including IDs and death descriptions, and saves the data into a CSV file for further analysis.
 
